@@ -27,7 +27,7 @@
   </head>
 
   <body class="font-['Poppins'] bg-[#f8f8f8] pt-20">
-    <header class="fixed top-0 left-0 w-full bg-[#f8f8f8] shadow-sm z-50">
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#f8f8f8] shadow-md">
       <nav
         class="max-w-7xl mx-auto h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between"
       >
@@ -39,45 +39,45 @@
           />
         </a>
 
-        <div class="hidden md:flex items-center gap-5 lg:gap-7">
+        <div class="hidden md:flex items-center gap-5 lg:gap-7 text-black">
           <a
             href="./index.html"
-            class="text-sm lg:text-base font-medium hover:text-yellow-600 transition"
+            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
           >
             Home
           </a>
 
           <a
             href="./index.html"
-            class="text-sm lg:text-base font-medium hover:text-yellow-600 transition"
+            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
           >
             Buy Vehicle
           </a>
 
           <a
             href="./index.html"
-            class="text-sm lg:text-base font-medium hover:text-yellow-600 transition"
+            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
           >
             Sell Vehicle
           </a>
 
           <a
             href="./index.html"
-            class="text-sm lg:text-base font-medium hover:text-yellow-600 transition"
+            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
           >
             Services
           </a>
 
           <a
             href="./index.html"
-            class="text-sm lg:text-base font-medium hover:text-yellow-600 transition"
+            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
           >
             Contact
           </a>
 
           <a
             href="./index.html"
-            class="text-sm lg:text-base font-medium hover:text-yellow-600 transition"
+            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
           >
             About
           </a>
@@ -110,6 +110,149 @@
         </div>
       </nav>
     </header>
+
+    <!-- main section -->
+
+    <main class="w-full">
+      <section class="relative w-full overflow-hidden">
+        <img
+          class="w-full aspect-[3/4] sm:aspect-[16/9] lg:aspect-[21/9] object-cover object-[20%_center] sm:object-center brightness-[75%] shadow-2xl"
+          src="./images/scorpio.jpeg"
+          alt="Mahindra Scorpio - Kedar Automall"
+        />
+
+        <div
+          class="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-l from-black/85 via-black/40 to-transparent pointer-events-none"
+        ></div>
+
+        <div
+          class="absolute top-1/2 left-4 right-4 sm:left-auto sm:right-10 md:right-16 lg:right-24 -translate-y-1/2 text-white p-2 sm:p-4 max-w-full sm:max-w-md lg:max-w-xl"
+        >
+          <h1
+            class="text-2xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight"
+          >
+            Your Next Car <br />
+            <span class="text-yellow-500">Starts Here...</span>
+          </h1>
+
+          <p
+            class="mt-3 sm:mt-5 text-xs sm:text-base leading-relaxed text-gray-200 font-normal"
+          >
+            Explore handpicked cars, compare with confidence, and get friendly
+            help at every step.
+          </p>
+        </div>
+      </section>
+
+      <!-- Explore section -->
+      <section>
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 flex flex-col sm:flex-row sm:items-end justify-between gap-4"
+        >
+          <div>
+            <h2
+              class="text-[#f0b000] tracking-widest uppercase text-sm font-semibold"
+            >
+              Browse by Style
+            </h2>
+            <h1 class="text-2xl sm:text-3xl font-bold mt-2 text-gray-900">
+              What kind of vehicle do you have in mind?
+            </h1>
+          </div>
+
+          <a
+            href="./index.html"
+            class="inline-flex items-center gap-2 text-[#996b11] hover:text-[#c08c20] font-bold text-sm sm:text-base transition-colors mb-1 sm:mb-2"
+          >
+            See all vehicles <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div
+          class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 pb-10 sm:pb-16"
+        >
+          <div
+            class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-yellow-400 transition-all duration-300 transform hover:-translate-y-2 p-5 sm:p-7 flex flex-col min-h-[220px] cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 sm:w-16 sm:h-16 bg-[#fcf2d9] text-[#c08c20] rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-auto"
+            >
+              <i class="fa-solid fa-car-side"></i>
+            </div>
+            <div class="mt-8 w-full">
+              <div class="flex justify-between items-end w-full">
+                <h3 class="text-xl font-bold text-gray-900">SUVs</h3>
+                <i
+                  class="fa-solid fa-arrow-right text-gray-300 group-hover:text-[#c08c20] transform group-hover:translate-x-1 transition-all"
+                ></i>
+              </div>
+              <p class="text-gray-500 text-sm mt-1">Space for every journey</p>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-yellow-400 transition-all duration-300 transform hover:-translate-y-2 p-5 sm:p-7 flex flex-col min-h-[220px] cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 sm:w-16 sm:h-16 bg-[#fcf2d9] text-[#c08c20] rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-auto"
+            >
+              <i class="fa-solid fa-car"></i>
+            </div>
+            <div class="mt-8 w-full">
+              <div class="flex justify-between items-end w-full">
+                <h3 class="text-xl font-bold text-gray-900">Sedans</h3>
+                <i
+                  class="fa-solid fa-arrow-right text-gray-300 group-hover:text-[#c08c20] transform group-hover:translate-x-1 transition-all"
+                ></i>
+              </div>
+              <p class="text-gray-500 text-sm mt-1">
+                Comfort with a little class
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-yellow-400 transition-all duration-300 transform hover:-translate-y-2 p-5 sm:p-7 flex flex-col min-h-[220px] cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 sm:w-16 sm:h-16 bg-[#fcf2d9] text-[#c08c20] rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-auto"
+            >
+              <i class="fa-solid fa-car"></i>
+            </div>
+            <div class="mt-8 w-full">
+              <div class="flex justify-between items-end w-full">
+                <h3 class="text-xl font-bold text-gray-900">Hatchbacks</h3>
+                <i
+                  class="fa-solid fa-arrow-right text-gray-300 group-hover:text-[#c08c20] transform group-hover:translate-x-1 transition-all"
+                ></i>
+              </div>
+              <p class="text-gray-500 text-sm mt-1">
+                Easy drives, everyday value
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-yellow-400 transition-all duration-300 transform hover:-translate-y-2 p-5 sm:p-7 flex flex-col min-h-[220px] cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 sm:w-16 sm:h-16 bg-[#fcf2d9] text-[#c08c20] rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-auto"
+            >
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <div class="mt-8 w-full">
+              <div class="flex justify-between items-end w-full">
+                <h3 class="text-xl font-bold text-gray-900">Premium</h3>
+                <i
+                  class="fa-solid fa-arrow-right text-gray-300 group-hover:text-[#c08c20] transform group-hover:translate-x-1 transition-all"
+                ></i>
+              </div>
+              <p class="text-gray-500 text-sm mt-1">A little more special</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </body>
