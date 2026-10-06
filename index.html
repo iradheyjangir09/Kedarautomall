@@ -24,8 +24,8 @@
     <title>Kedarautomall</title>
   </head>
 
-  <body class="font-['Plus_Jakarta_Sans'] bg-[#f8f8f8] pt-20">
-    <header class="fixed top-0 left-0 w-full z-50 bg-[#f8f8f8] shadow-md">
+  <body class="font-['Plus_Jakarta_Sans',sans-serif] font-thin">
+    <header class="sticky top-0 left-0 w-full z-50 bg-[#f8f8f8] shadow-md">
       <nav
         class="max-w-7xl mx-auto h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between"
       >
@@ -112,33 +112,155 @@
     <!-- main section -->
 
     <main class="w-full">
-      <section class="relative w-full overflow-hidden">
+      <section
+        class="relative w-full min-h-[520px] lg:min-h-[600px] flex items-center overflow-hidden bg-black"
+      >
         <img
-          class="w-full aspect-[3/4] sm:aspect-[16/9] lg:aspect-[21/9] object-cover object-[20%_center] sm:object-center brightness-[75%] shadow-2xl"
-          src="./images/scorpio.jpeg"
-          alt="Mahindra Scorpio - Kedar Automall"
+          class="absolute inset-0 w-full h-full object-cover object-center opacity-70"
+          src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920&q=80"
+          alt="Premium car photo"
         />
 
         <div
-          class="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-l from-black/85 via-black/40 to-transparent pointer-events-none"
+          class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/20"
         ></div>
 
         <div
-          class="absolute top-1/2 left-4 right-4 sm:left-auto sm:right-10 md:right-16 lg:right-24 -translate-y-1/2 text-white p-2 sm:p-4 max-w-full sm:max-w-md lg:max-w-xl"
-        >
-          <h1
-            class="text-2xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight"
-          >
-            Your Next Car <br />
-            <span class="text-yellow-500">Starts Here...</span>
-          </h1>
+          class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/70 to-transparent"
+        ></div>
 
-          <p
-            class="mt-3 sm:mt-5 text-xs sm:text-base leading-relaxed text-gray-200 font-normal"
-          >
-            Explore handpicked cars, compare with confidence, and get friendly
-            help at every step.
-          </p>
+        <div
+          class="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-16"
+        >
+          <div class="max-w-2xl">
+            <div class="flex items-center gap-3 mb-5">
+              <span class="h-px w-10 bg-yellow-500"></span>
+
+              <span
+                class="text-yellow-400 text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase"
+              >
+                Pre-Owned Cars • Trusted Deals
+              </span>
+            </div>
+
+            <h1
+              class="text-4xl sm:text-5xl lg:text-7xl font-black leading-[1.05] tracking-tight text-white"
+            >
+              Your Next Car
+              <br />
+
+              <span class="text-yellow-500"> Starts Here... </span>
+            </h1>
+
+            <p
+              class="mt-5 max-w-xl text-sm sm:text-base lg:text-lg leading-relaxed text-gray-300"
+            >
+              Discover quality pre-owned cars at Kedar Automall. Buy your dream
+              car, sell your old car, or exchange it with confidence.
+            </p>
+
+            <div class="flex flex-wrap gap-3 mt-7">
+              <a
+                href="#cars"
+                class="inline-flex items-center justify-center gap-2 bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-yellow-500/20 hover:-translate-y-1"
+              >
+                Explore Cars
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <a
+                href="#sell"
+                class="inline-flex items-center justify-center gap-2 border border-white/30 hover:border-yellow-500 bg-white/10 hover:bg-yellow-500 text-white hover:text-black font-semibold px-6 py-3.5 rounded-full backdrop-blur-sm transition-all duration-300"
+              >
+                Sell Your Car
+                <i class="fa-solid fa-tag"></i>
+              </a>
+            </div>
+
+            <div
+              class="mt-9 pt-6 border-t border-white/20 grid grid-cols-2 sm:grid-cols-4 gap-5 max-w-2xl"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-yellow-500/10 border border-yellow-500/30 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-shield-halved text-yellow-400"></i>
+                </div>
+
+                <div>
+                  <p class="text-white text-xs sm:text-sm font-bold">
+                    Verified Cars
+                  </p>
+                  <p class="text-gray-400 text-[10px] sm:text-xs">
+                    Quality Checked
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-yellow-500/10 border border-yellow-500/30 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-handshake text-yellow-400"></i>
+                </div>
+
+                <div>
+                  <p class="text-white text-xs sm:text-sm font-bold">
+                    Trusted Deals
+                  </p>
+                  <p class="text-gray-400 text-[10px] sm:text-xs">
+                    Transparent Pricing
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-yellow-500/10 border border-yellow-500/30 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-car text-yellow-400"></i>
+                </div>
+
+                <div>
+                  <p class="text-white text-xs sm:text-sm font-bold">
+                    Wide Choice
+                  </p>
+                  <p class="text-gray-400 text-[10px] sm:text-xs">
+                    Multiple Models
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-yellow-500/10 border border-yellow-500/30 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-headset text-yellow-400"></i>
+                </div>
+
+                <div>
+                  <p class="text-white text-xs sm:text-sm font-bold">
+                    Expert Support
+                  </p>
+                  <p class="text-gray-400 text-[10px] sm:text-xs">
+                    Help Every Step
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hidden lg:flex absolute right-8 bottom-10 z-10 items-center gap-3 px-5 py-3 rounded-full bg-black/50 backdrop-blur-md border border-white/10"
+        >
+          <span
+            class="w-2.5 h-2.5 rounded-full bg-yellow-500 shadow-lg shadow-yellow-500/60"
+          ></span>
+
+          <span class="text-white text-sm font-medium">
+            Buy • Sell • Exchange
+          </span>
         </div>
       </section>
 
@@ -278,7 +400,7 @@
           >
             <img
               src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Bolero-Camper/8806/1769596921534/front-left-side-47.jpg"
-              class="w-full object-cover rounded-2xl mb-4"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
               alt="Mahindra Bolero Camper"
             />
             <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
@@ -290,10 +412,8 @@
               2022 . Diesel . Manual
             </h4>
             <p class="text-gray-500 text-sm mt-2 line-clamp-2">
-              The Mahindra Bolero Camper is a rugged and reliable pickup truck
-              designed for both work and leisure. With its robust build and
-              powerful engine, it can handle tough terrains while providing
-              ample cargo space.
+              Rugged double-cabin pickup with strong build quality, practical
+              cargo space and dependable performance for work and everyday use.
             </p>
             <hr class="my-4 border-gray-100" />
             <div class="flex justify-between items-center mt-auto">
@@ -312,27 +432,26 @@
             class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
           >
             <img
-              src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Bolero-Camper/8806/1769596921534/front-left-side-47.jpg"
-              class="w-full object-cover rounded-2xl mb-4"
-              alt="Mahindra Bolero Camper"
+              src="https://img.gaadicdn.com/images/car-images/large/Mahindra/Bolero/10754/1760013521659/STEALTH-BLACK_282828.jpg"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra Bolero"
             />
             <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
-              Mahindra Bolero Camper
+              Mahindra Bolero
             </h4>
             <h4
               class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
             >
-              2022 . Diesel . Manual
+              2021 . Diesel . Manual
             </h4>
             <p class="text-gray-500 text-sm mt-2 line-clamp-2">
-              The Mahindra Bolero Camper is a rugged and reliable pickup truck
-              designed for both work and leisure. With its robust build and
-              powerful engine, it can handle tough terrains while providing
-              ample cargo space.
+              A trusted utility SUV known for its simple mechanical package,
+              practical cabin and ability to handle everyday rural and
+              commercial use.
             </p>
             <hr class="my-4 border-gray-100" />
             <div class="flex justify-between items-center mt-auto">
-              <p class="text-xl font-extrabold text-[#c08c20]">₹ 8.5 Lakh</p>
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 7.2 Lakh</p>
 
               <a
                 href="./index.html"
@@ -347,27 +466,26 @@
             class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
           >
             <img
-              src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Bolero-Camper/8806/1769596921534/front-left-side-47.jpg"
-              class="w-full object-cover rounded-2xl mb-4"
-              alt="Mahindra Bolero Camper"
+              src="https://images.overdrive.in/uploads/2024/07/Untitled-design-2024-07-03T092511.590-2024-07-a67fa4739b88eed26dd38b0c82635173-900x506.png"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra Scorpio N"
             />
             <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
-              Mahindra Bolero Camper
+              Mahindra Scorpio N
             </h4>
             <h4
               class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
             >
-              2022 . Diesel . Manual
+              2023 . Diesel . Manual
             </h4>
             <p class="text-gray-500 text-sm mt-2 line-clamp-2">
-              The Mahindra Bolero Camper is a rugged and reliable pickup truck
-              designed for both work and leisure. With its robust build and
-              powerful engine, it can handle tough terrains while providing
-              ample cargo space.
+              A muscular seven-seater SUV offering a commanding stance, spacious
+              cabin and a strong diesel powertrain for highway and off-road
+              driving.
             </p>
             <hr class="my-4 border-gray-100" />
             <div class="flex justify-between items-center mt-auto">
-              <p class="text-xl font-extrabold text-[#c08c20]">₹ 8.5 Lakh</p>
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 18.9 Lakh</p>
 
               <a
                 href="./index.html"
@@ -382,12 +500,12 @@
             class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
           >
             <img
-              src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Bolero-Camper/8806/1769596921534/front-left-side-47.jpg"
-              class="w-full object-cover rounded-2xl mb-4"
-              alt="Mahindra Bolero Camper"
+              src="https://cdn-s3.autocarindia.com/legacy/cdni/mmv_images/colors/20250714125759_Mahindra_Scorpio_Classic_Stealth_Black[1].jpg?w=728&q=75&fm=auto"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra Scorpio Classic"
             />
             <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
-              Mahindra Bolero Camper
+              Mahindra Scorpio Classic
             </h4>
             <h4
               class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
@@ -395,14 +513,13 @@
               2022 . Diesel . Manual
             </h4>
             <p class="text-gray-500 text-sm mt-2 line-clamp-2">
-              The Mahindra Bolero Camper is a rugged and reliable pickup truck
-              designed for both work and leisure. With its robust build and
-              powerful engine, it can handle tough terrains while providing
-              ample cargo space.
+              Classic body-on-frame SUV styling with a roomy cabin, rugged
+              character and a proven diesel engine suited to family and utility
+              use.
             </p>
             <hr class="my-4 border-gray-100" />
             <div class="flex justify-between items-center mt-auto">
-              <p class="text-xl font-extrabold text-[#c08c20]">₹ 8.5 Lakh</p>
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 13.5 Lakh</p>
 
               <a
                 href="./index.html"
@@ -417,27 +534,25 @@
             class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
           >
             <img
-              src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Bolero-Camper/8806/1769596921534/front-left-side-47.jpg"
-              class="w-full object-cover rounded-2xl mb-4"
-              alt="Mahindra Bolero Camper"
+              src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/148477/thar-right-front-three-quarter-6.png?isig=0&q=80"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra Thar"
             />
             <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
-              Mahindra Bolero Camper
+              Mahindra Thar
             </h4>
             <h4
               class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
             >
-              2022 . Diesel . Manual
+              2023 . Diesel . Manual
             </h4>
             <p class="text-gray-500 text-sm mt-2 line-clamp-2">
-              The Mahindra Bolero Camper is a rugged and reliable pickup truck
-              designed for both work and leisure. With its robust build and
-              powerful engine, it can handle tough terrains while providing
-              ample cargo space.
+              Iconic off-road SUV with a bold design, capable drivetrain and a
+              strong road presence for both adventure and daily driving.
             </p>
             <hr class="my-4 border-gray-100" />
             <div class="flex justify-between items-center mt-auto">
-              <p class="text-xl font-extrabold text-[#c08c20]">₹ 8.5 Lakh</p>
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 13.9 Lakh</p>
 
               <a
                 href="./index.html"
@@ -452,27 +567,25 @@
             class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
           >
             <img
-              src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Bolero-Camper/8806/1769596921534/front-left-side-47.jpg"
-              class="w-full object-cover rounded-2xl mb-4"
-              alt="Mahindra Bolero Camper"
+              src="https://assets.tractorjunction.com/car-junction/images/models/1788847386484-Thar_Roxx.webp"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra Thar Roxx"
             />
             <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
-              Mahindra Bolero Camper
+              Mahindra Thar Roxx
             </h4>
             <h4
               class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
             >
-              2022 . Diesel . Manual
+              2025 . Diesel . Manual
             </h4>
             <p class="text-gray-500 text-sm mt-2 line-clamp-2">
-              The Mahindra Bolero Camper is a rugged and reliable pickup truck
-              designed for both work and leisure. With its robust build and
-              powerful engine, it can handle tough terrains while providing
-              ample cargo space.
+              Five-door lifestyle SUV combining Thar's rugged character with
+              extra cabin space, practicality and a premium modern feel.
             </p>
             <hr class="my-4 border-gray-100" />
             <div class="flex justify-between items-center mt-auto">
-              <p class="text-xl font-extrabold text-[#c08c20]">₹ 8.5 Lakh</p>
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 18.75 Lakh</p>
 
               <a
                 href="./index.html"
@@ -487,27 +600,25 @@
             class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
           >
             <img
-              src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Bolero-Camper/8806/1769596921534/front-left-side-47.jpg"
-              class="w-full object-cover rounded-2xl mb-4"
-              alt="Mahindra Bolero Camper"
+              src="https://www.carandbike.com/_next/image?url=https%3A%2F%2Fimages.carandbike.com%2Fcar-images%2Fbig%2Fmahindra%2Fxuv700%2Fmahindra-xuv700.jpg%3Fv%3D15&w=1920&q=80"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra XUV700"
             />
             <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
-              Mahindra Bolero Camper
+              Mahindra XUV700
             </h4>
             <h4
               class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
             >
-              2022 . Diesel . Manual
+              2023 . Diesel . Automatic
             </h4>
             <p class="text-gray-500 text-sm mt-2 line-clamp-2">
-              The Mahindra Bolero Camper is a rugged and reliable pickup truck
-              designed for both work and leisure. With its robust build and
-              powerful engine, it can handle tough terrains while providing
-              ample cargo space.
+              Premium family SUV with a spacious cabin, strong performance and a
+              refined highway-friendly driving experience.
             </p>
             <hr class="my-4 border-gray-100" />
             <div class="flex justify-between items-center mt-auto">
-              <p class="text-xl font-extrabold text-[#c08c20]">₹ 8.5 Lakh</p>
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 19.5 Lakh</p>
 
               <a
                 href="./index.html"
@@ -522,27 +633,25 @@
             class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
           >
             <img
-              src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Bolero-Camper/8806/1769596921534/front-left-side-47.jpg"
-              class="w-full object-cover rounded-2xl mb-4"
-              alt="Mahindra Bolero Camper"
+              src="https://static.caronphone.com/public/brands/20/474/1982/1982_1716546485.webp"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra XUV 3XO"
             />
             <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
-              Mahindra Bolero Camper
+              Mahindra XUV 3XO
             </h4>
             <h4
               class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
             >
-              2022 . Diesel . Manual
+              2024 . Petrol . Manual
             </h4>
             <p class="text-gray-500 text-sm mt-2 line-clamp-2">
-              The Mahindra Bolero Camper is a rugged and reliable pickup truck
-              designed for both work and leisure. With its robust build and
-              powerful engine, it can handle tough terrains while providing
-              ample cargo space.
+              Compact SUV with a sporty design, modern cabin and an
+              easy-to-drive package for city and weekend use.
             </p>
             <hr class="my-4 border-gray-100" />
             <div class="flex justify-between items-center mt-auto">
-              <p class="text-xl font-extrabold text-[#c08c20]">₹ 8.5 Lakh</p>
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 11.4 Lakh</p>
 
               <a
                 href="./index.html"
@@ -648,6 +757,44 @@
         </div>
       </section>
       <hr class="border-gray-200" />
+
+      <!-- sell section -->
+      <section class="w-full p-4 max-w-6xl mx-auto">
+        <div
+          class="mainbox relative overflow-hidden w-full bg-[#181a18] text-white rounded-[2.5rem] p-6 sm:p-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 shadow-2xl"
+        >
+          <div
+            class="absolute -top-20 -left-20 w-80 h-80 bg-yellow-500/20 rounded-full blur-[90px] pointer-events-none"
+          ></div>
+
+          <div class="leftside max-w-xl relative z-10">
+            <div
+              class="inline-flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full text-xs text-gray-300 mb-4 border border-white/10"
+            >
+              <i class="fa-solid fa-key text-yellow-500"></i>
+              <span>Selling your car?</span>
+            </div>
+            <h2
+              class="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight"
+            >
+              Your car has a next chapter. Let's find its next owner.
+            </h2>
+            <p class="text-gray-300 mt-4 text-sm sm:text-base font-normal">
+              Share your vehicle and let interested buyers find it. We make the
+              process simple, secure, and straightforward.
+            </p>
+          </div>
+
+          <div class="rightsidebtn shrink-0 relative z-10">
+            <button
+              class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-full transition-colors duration-300 flex items-center gap-2"
+            >
+              <span>Get Started</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
