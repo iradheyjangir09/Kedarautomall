@@ -662,8 +662,56 @@
             </div>
           </div>
         </div>
+        <div class="mt-10 sm:mt-14 text-center">
+          <a
+            href="./index.html"
+            class="inline-flex items-center gap-3 bg-black hover:bg-yellow-500 text-white hover:text-black font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-yellow-500/20 transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <span>View All Listings</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </section>
       <hr class="border-gray-200" />
+
+      <!-- sell section -->
+      <section class="w-full p-4 max-w-6xl mx-auto">
+        <div
+          class="mainbox relative overflow-hidden w-full bg-[#181a18] text-white rounded-[2.5rem] p-6 sm:p-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 shadow-2xl"
+        >
+          <div
+            class="absolute -top-20 -left-20 w-80 h-80 bg-yellow-500/20 rounded-full blur-[90px] pointer-events-none"
+          ></div>
+
+          <div class="leftside max-w-xl relative z-10">
+            <div
+              class="inline-flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full text-xs text-gray-300 mb-4 border border-white/10"
+            >
+              <i class="fa-solid fa-key text-yellow-500"></i>
+              <span>Selling your car?</span>
+            </div>
+            <h2
+              class="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight"
+            >
+              Your car has a next chapter. Let's find its next owner.
+            </h2>
+            <p class="text-gray-300 mt-4 text-sm sm:text-base font-normal">
+              Share your vehicle and let interested buyers find it. We make the
+              process simple, secure, and straightforward.
+            </p>
+          </div>
+
+          <div class="rightsidebtn shrink-0 relative z-10">
+            <button
+              class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-full transition-colors duration-300 flex items-center gap-2"
+            >
+              <span>Get Started</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
       <!-- services section -->
       <section
         class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 flex flex-col sm:flex-row sm:items-center justify-between"
@@ -758,40 +806,45 @@
       </section>
       <hr class="border-gray-200" />
 
-      <!-- sell section -->
-      <section class="w-full p-4 max-w-6xl mx-auto">
+      <!-- about us -->
+      <section class="w-full max-w-7xl mx-auto px-4 py-12 sm:py-16">
         <div
-          class="mainbox relative overflow-hidden w-full bg-[#181a18] text-white rounded-[2.5rem] p-6 sm:p-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 shadow-2xl"
+          class="aboutsection grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center"
         >
-          <div
-            class="absolute -top-20 -left-20 w-80 h-80 bg-yellow-500/20 rounded-full blur-[90px] pointer-events-none"
-          ></div>
-
-          <div class="leftside max-w-xl relative z-10">
-            <div
-              class="inline-flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full text-xs text-gray-300 mb-4 border border-white/10"
+          <div class="about-text-section">
+            <h3
+              class="text-[#f0b000] tracking-widest uppercase text-sm font-semibold mb-3"
             >
-              <i class="fa-solid fa-key text-yellow-500"></i>
-              <span>Selling your car?</span>
-            </div>
+              About Us
+            </h3>
             <h2
-              class="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight"
+              class="text-3xl sm:text-4xl font-bold text-gray-900 mb-5 leading-tight"
             >
-              Your car has a next chapter. Let's find its next owner.
+              Trusted Partner in Your <br />
+              Car Buying Journey
             </h2>
-            <p class="text-gray-300 mt-4 text-sm sm:text-base font-normal">
-              Share your vehicle and let interested buyers find it. We make the
-              process simple, secure, and straightforward.
+            <p class="text-gray-500 text-base sm:text-lg mb-6 leading-relaxed">
+              Kedar Automall gives you a transparent and hassle-free experience
+              to buy, sell, or exchange premium pre-owned cars. With our strict
+              quality checks and dedicated customer support, we make sure you
+              drive home with peace of mind.
             </p>
+            <div class="flex items-center gap-4 mt-8">
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 bg-black text-white px-6 py-3.5 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors"
+              >
+                Know More <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
           </div>
 
-          <div class="rightsidebtn shrink-0 relative z-10">
-            <button
-              class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-full transition-colors duration-300 flex items-center gap-2"
-            >
-              <span>Get Started</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
+          <div class="about-rightside relative">
+            <img
+              src="./images/aboutus.png"
+              alt="Kedar Automall Experience"
+              class="w-full h-auto object-cover rounded-2xl shadow-xl border border-gray-100"
+            />
           </div>
         </div>
       </section>
