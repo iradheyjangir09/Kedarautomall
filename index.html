@@ -986,68 +986,97 @@
       <!-- footer section -->
 
       <footer class="w-full bg-[#181a19] pt-16 pb-8 font-sans">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="zoom-out">
-          <div class="footer grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div class="firstfooter md:col-span-2">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-aos="zoom-out">
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+            <div class="md:col-span-2">
               <img
                 src="./images/logo.png"
-                class="w-[140px] bg-white px-2 py-2 rounded-xl"
-                alt="Kedarautomall Logo"
+                class="w-[140px] rounded-xl bg-white px-2 py-2"
+                alt="Kedarautomall logo"
               />
+
               <p
-                class="text-gray-400 pt-6 text-sm sm:text-base leading-relaxed max-w-sm"
+                class="max-w-sm pt-6 text-sm leading-relaxed text-gray-400 sm:text-base"
               >
                 A more personal way to buy or sell your next vehicle.<br />
                 Find your next drive with Kedarautomall.
               </p>
             </div>
 
-            <div class="explore-secction-footer flex flex-col gap-4">
-              <h3 class="text-white font-bold text-lg mb-2">Explore</h3>
-              <p
-                class="text-gray-400 hover:text-white cursor-pointer transition-colors text-sm sm:text-base"
+            <nav aria-label="Explore" class="flex flex-col gap-4">
+              <h2 class="mb-2 text-lg font-bold text-white">Explore</h2>
+
+              <a
+                href="#vehicles"
+                class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
               >
                 Browse vehicles
-              </p>
-              <p
-                class="text-gray-400 hover:text-white cursor-pointer transition-colors text-sm sm:text-base"
+              </a>
+              <a
+                href="#sell"
+                class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
               >
                 Sell your vehicle
-              </p>
-              <p
-                class="text-gray-400 hover:text-white cursor-pointer transition-colors text-sm sm:text-base"
+              </a>
+              <a
+                href="#services"
+                class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
               >
                 Our services
-              </p>
-            </div>
+              </a>
+            </nav>
 
-            <div class="kedarautomall-footer-section flex flex-col gap-4">
-              <h3 class="text-white font-bold text-lg mb-2">Kedarautomall</h3>
-              <p
-                class="text-gray-400 hover:text-white cursor-pointer transition-colors text-sm sm:text-base"
+            <nav aria-label="Kedarautomall" class="flex flex-col gap-4">
+              <h2 class="mb-2 text-lg font-bold text-white">Kedarautomall</h2>
+
+              <a
+                href="#about"
+                class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
               >
                 About us
-              </p>
-              <p
-                class="text-gray-400 hover:text-white cursor-pointer transition-colors text-sm sm:text-base"
+              </a>
+              <a
+                href="#contact"
+                class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
               >
                 Contact
-              </p>
-              <p
-                class="text-gray-400 hover:text-white cursor-pointer transition-colors text-sm sm:text-base"
+              </a>
+              <a
+                href="#"
+                class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
               >
                 Back to top
-              </p>
-            </div>
+              </a>
+            </nav>
           </div>
 
+          <section class="mt-12" aria-labelledby="footer-map-heading">
+            <h2
+              id="footer-map-heading"
+              class="mb-4 text-lg font-bold text-white"
+            >
+              Find Us
+            </h2>
+
+            <div class="overflow-hidden rounded-2xl border border-gray-700">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d474.26311953942746!2d73.94909478149086!3d29.630791398864925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391643006c65038b%3A0x240432dc6ad6764!2sKhatiwas!5e0!3m2!1sen!2sin!4v1792643469844!5m2!1sen!2sin"
+                title="Google Map showing Kedarautomall's location"
+                class="block h-64 w-full border-0 sm:h-72 md:h-80"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+          </section>
+
           <div
-            class="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4"
+            class="mt-10 flex flex-col items-center justify-between gap-4 border-t border-gray-800 pt-8 md:flex-row"
           >
-            <p class="text-gray-400 text-sm text-center md:text-left">
+            <p class="text-center text-sm text-gray-400 md:text-left">
               © 2026 Kedarautomall. All rights reserved.
             </p>
-            <p class="text-gray-400 text-sm text-center md:text-right">
+            <p class="text-center text-sm text-gray-400 md:text-right">
               Find a car that feels right.
             </p>
           </div>
