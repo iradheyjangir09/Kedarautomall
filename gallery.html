@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Gallery | Kedarautomall</title>
+  </head>
+
+  <body id="top" class="font-['Outfit',sans-serif] font-light text-gray-900 transition">
+    <header class="top-0 left-0 w-full z-50 bg-[#f8f8f8] shadow-md">
+      <nav
+        class="max-w-7xl mx-auto h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between"
+      >
+        <a href="./index.html" class="shrink-0">
+          <img
+            src="./images/logo.png"
+            alt="Kedarautomall Logo"
+            class="w-[85px] sm:w-[100px]"
+          />
+        </a>
+
+        <div class="hidden md:flex items-center gap-5 lg:gap-7 text-black">
+          <a
+            href="./index.html"
+            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
+          >
+            Home
+          </a>
+          <a
+            href="./service.html"
+            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
+          >
+            Services
+          </a>
+          <a
+            href="./gallery.html"
+            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition" aria-current="page"
+          >
+            Gallery
+          </a>
+          <a
+            href="./contact.html"
+            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
+          >
+            Contact
+          </a>
+        </div>
+
+        <details class="relative md:hidden">
+          <summary aria-label="Open menu" class="list-none text-xl hover:text-yellow-600 transition cursor-pointer">
+            <i class="fas fa-bars"></i>
+          </summary>
+          <div class="absolute right-0 top-full mt-3 min-w-44 rounded-xl bg-white p-2 shadow-xl border border-gray-100">
+            <a href="./index.html" class="block px-4 py-3 text-sm font-medium text-black hover:bg-yellow-50 rounded-lg">Home</a>
+            <a href="./service.html" class="block px-4 py-3 text-sm font-medium text-black hover:bg-yellow-50 rounded-lg">Services</a>
+            <a href="./gallery.html" class="block px-4 py-3 text-sm font-medium text-black hover:bg-yellow-50 rounded-lg" aria-current="page">Gallery</a>
+            <a href="./contact.html" class="block px-4 py-3 text-sm font-medium text-black hover:bg-yellow-50 rounded-lg">Contact</a>
+          </div>
+        </details>
+      </nav>
+    </header>
+
+    <!-- main section -->
+
+    <main class="w-full">
+      <!-- Explore section -->
+      <section id="vehicles">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 flex flex-col sm:flex-row sm:items-end justify-between gap-4"
+          data-aos="fade-left"
+        >
+          <div>
+            <h2
+              class="text-[#f0b000] tracking-widest uppercase text-sm font-semibold"
+            >
+              Browse by Style
+            </h2>
+            <h1 class="text-2xl sm:text-3xl font-bold mt-2 text-gray-900">
+              What kind of vehicle do you have in mind?
+            </h1>
+          </div>
+
+          <a
+            href="./gallery.html#cars"
+            class="inline-flex items-center gap-2 text-[#996b11] hover:text-[#c08c20] font-bold text-sm sm:text-base transition-colors mb-1 sm:mb-2"
+          >
+            See all vehicles <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div
+          class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 pb-10 sm:pb-16"
+          data-aos="fade-right"
+        >
+          <div
+            class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-yellow-400 transition-all duration-300 transform hover:-translate-y-2 p-5 sm:p-7 flex flex-col min-h-[220px] cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 sm:w-16 sm:h-16 bg-[#fcf2d9] text-[#c08c20] rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-auto"
+            >
+              <i class="fa-solid fa-car-side"></i>
+            </div>
+            <div class="mt-8 w-full">
+              <div class="flex justify-between items-end w-full">
+                <h3 class="text-xl font-bold text-gray-900">SUVs</h3>
+                <i
+                  class="fa-solid fa-arrow-right text-gray-300 group-hover:text-[#c08c20] transform group-hover:translate-x-1 transition-all"
+                ></i>
+              </div>
+              <p class="text-gray-500 text-sm mt-1">Space for every journey</p>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-yellow-400 transition-all duration-300 transform hover:-translate-y-2 p-5 sm:p-7 flex flex-col min-h-[220px] cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 sm:w-16 sm:h-16 bg-[#fcf2d9] text-[#c08c20] rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-auto"
+            >
+              <i class="fa-solid fa-car"></i>
+            </div>
+            <div class="mt-8 w-full">
+              <div class="flex justify-between items-end w-full">
+                <h3 class="text-xl font-bold text-gray-900">Sedans</h3>
+                <i
+                  class="fa-solid fa-arrow-right text-gray-300 group-hover:text-[#c08c20] transform group-hover:translate-x-1 transition-all"
+                ></i>
+              </div>
+              <p class="text-gray-500 text-sm mt-1">
+                Comfort with a little class
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-yellow-400 transition-all duration-300 transform hover:-translate-y-2 p-5 sm:p-7 flex flex-col min-h-[220px] cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 sm:w-16 sm:h-16 bg-[#fcf2d9] text-[#c08c20] rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-auto"
+            >
+              <i class="fa-solid fa-car"></i>
+            </div>
+            <div class="mt-8 w-full">
+              <div class="flex justify-between items-end w-full">
+                <h3 class="text-xl font-bold text-gray-900">Hatchbacks</h3>
+                <i
+                  class="fa-solid fa-arrow-right text-gray-300 group-hover:text-[#c08c20] transform group-hover:translate-x-1 transition-all"
+                ></i>
+              </div>
+              <p class="text-gray-500 text-sm mt-1">
+                Easy drives, everyday value
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-yellow-400 transition-all duration-300 transform hover:-translate-y-2 p-5 sm:p-7 flex flex-col min-h-[220px] cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 sm:w-16 sm:h-16 bg-[#fcf2d9] text-[#c08c20] rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-auto"
+            >
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <div class="mt-8 w-full">
+              <div class="flex justify-between items-end w-full">
+                <h3 class="text-xl font-bold text-gray-900">Premium</h3>
+                <i
+                  class="fa-solid fa-arrow-right text-gray-300 group-hover:text-[#c08c20] transform group-hover:translate-x-1 transition-all"
+                ></i>
+              </div>
+              <p class="text-gray-500 text-sm mt-1">A little more special</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- featured vehicles section -->
+      <section
+        id="cars"
+        class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16"
+        data-aos="fade-left"
+      >
+        <div class="vehicle-text-section mb-8">
+          <h2
+            class="text-[#f0b000] tracking-widest uppercase text-sm font-semibold"
+          >
+            A FEW GOOD FINDS
+          </h2>
+          <h1 class="text-2xl sm:text-3xl font-bold mt-2 text-gray-900">
+            Latest and Greatest Vehicles
+          </h1>
+          <p class="text-gray-500 mt-2">
+            Discover our selection of vehicles, carefully chosen for their
+            quality, performance, and style.
+          </p>
+        </div>
+
+        <div
+          class="vehicle-section-images grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <div
+            class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Bolero-Camper/8806/1769596921534/front-left-side-47.jpg"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra Bolero Camper"
+            />
+            <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
+              Mahindra Bolero Camper
+            </h4>
+            <h4
+              class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
+            >
+              2022 . Diesel . Manual
+            </h4>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+              Rugged double-cabin pickup with strong build quality, practical
+              cargo space and dependable performance for work and everyday use.
+            </p>
+            <hr class="my-4 border-gray-100" />
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 8.5 Lakh</p>
+
+              <a
+                href="./contact.html"
+                class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://img.gaadicdn.com/images/car-images/large/Mahindra/Bolero/10754/1760013521659/STEALTH-BLACK_282828.jpg"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra Bolero"
+            />
+            <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
+              Mahindra Bolero
+            </h4>
+            <h4
+              class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
+            >
+              2021 . Diesel . Manual
+            </h4>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+              A trusted utility SUV known for its simple mechanical package,
+              practical cabin and ability to handle everyday rural and
+              commercial use.
+            </p>
+            <hr class="my-4 border-gray-100" />
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 7.2 Lakh</p>
+
+              <a
+                href="./contact.html"
+                class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://images.overdrive.in/uploads/2024/07/Untitled-design-2024-07-03T092511.590-2024-07-a67fa4739b88eed26dd38b0c82635173-900x506.png"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra Scorpio N"
+            />
+            <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
+              Mahindra Scorpio N
+            </h4>
+            <h4
+              class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
+            >
+              2023 . Diesel . Manual
+            </h4>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+              A muscular seven-seater SUV offering a commanding stance, spacious
+              cabin and a strong diesel powertrain for highway and off-road
+              driving.
+            </p>
+            <hr class="my-4 border-gray-100" />
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 18.9 Lakh</p>
+
+              <a
+                href="./contact.html"
+                class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://cdn-s3.autocarindia.com/legacy/cdni/mmv_images/colors/20250714125759_Mahindra_Scorpio_Classic_Stealth_Black[1].jpg?w=728&q=75&fm=auto"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra Scorpio Classic"
+            />
+            <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
+              Mahindra Scorpio Classic
+            </h4>
+            <h4
+              class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
+            >
+              2022 . Diesel . Manual
+            </h4>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+              Classic body-on-frame SUV styling with a roomy cabin, rugged
+              character and a proven diesel engine suited to family and utility
+              use.
+            </p>
+            <hr class="my-4 border-gray-100" />
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 13.5 Lakh</p>
+
+              <a
+                href="./contact.html"
+                class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/148477/thar-right-front-three-quarter-6.png?isig=0&q=80"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra Thar"
+            />
+            <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
+              Mahindra Thar
+            </h4>
+            <h4
+              class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
+            >
+              2023 . Diesel . Manual
+            </h4>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+              Iconic off-road SUV with a bold design, capable drivetrain and a
+              strong road presence for both adventure and daily driving.
+            </p>
+            <hr class="my-4 border-gray-100" />
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 13.9 Lakh</p>
+
+              <a
+                href="./contact.html"
+                class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://assets.tractorjunction.com/car-junction/images/models/1788847386484-Thar_Roxx.webp"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra Thar Roxx"
+            />
+            <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
+              Mahindra Thar Roxx
+            </h4>
+            <h4
+              class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
+            >
+              2025 . Diesel . Manual
+            </h4>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+              Five-door lifestyle SUV combining Thar's rugged character with
+              extra cabin space, practicality and a premium modern feel.
+            </p>
+            <hr class="my-4 border-gray-100" />
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 18.75 Lakh</p>
+
+              <a
+                href="./contact.html"
+                class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://www.carandbike.com/_next/image?url=https%3A%2F%2Fimages.carandbike.com%2Fcar-images%2Fbig%2Fmahindra%2Fxuv700%2Fmahindra-xuv700.jpg%3Fv%3D15&w=1920&q=80"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra XUV700"
+            />
+            <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
+              Mahindra XUV700
+            </h4>
+            <h4
+              class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
+            >
+              2023 . Diesel . Automatic
+            </h4>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+              Premium family SUV with a spacious cabin, strong performance and a
+              refined highway-friendly driving experience.
+            </p>
+            <hr class="my-4 border-gray-100" />
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 19.5 Lakh</p>
+
+              <a
+                href="./contact.html"
+                class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="section-image-card rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 p-4 sm:p-5"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://static.caronphone.com/public/brands/20/474/1982/1982_1716546485.webp"
+              class="w-full object-cover rounded-2xl mb-4 aspect-video"
+              alt="Mahindra XUV 3XO"
+            />
+            <h4 class="text-lg font-bold text-gray-900 line-clamp-1">
+              Mahindra XUV 3XO
+            </h4>
+            <h4
+              class="text-sm text-gray-500 font-medium mt-1 flex items-center gap-2"
+            >
+              2024 . Petrol . Manual
+            </h4>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+              Compact SUV with a sporty design, modern cabin and an
+              easy-to-drive package for city and weekend use.
+            </p>
+            <hr class="my-4 border-gray-100" />
+            <div class="flex justify-between items-center mt-auto">
+              <p class="text-xl font-extrabold text-[#c08c20]">₹ 11.4 Lakh</p>
+
+              <a
+                href="./contact.html"
+                class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 sm:mt-14 text-center">
+          <a
+            href="./gallery.html#cars"
+            class="inline-flex items-center gap-3 bg-black hover:bg-yellow-500 text-white hover:text-black font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-yellow-500/20 transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <span>View All Listings</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+      <hr class="border-gray-200" />
+
+      <!-- footer section -->
+
+      <footer class="w-full bg-[#181a19] pt-16 pb-8 font-sans">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-aos="zoom-out">
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div>
+              <img
+                src="./images/logo.png"
+                class="w-[140px] rounded-xl bg-white px-2 py-2"
+                alt="Kedarautomall logo"
+              />
+
+              <p
+                class="max-w-sm pt-6 text-sm leading-relaxed text-gray-400 sm:text-base"
+              >
+                Browse vehicles at Kedarautomall.<br />
+                Contact us to ask about current availability.
+              </p>
+            </div>
+
+            <nav aria-label="Gallery" class="flex flex-col gap-4">
+              <h2 class="mb-2 text-lg font-bold text-white">Gallery</h2>
+
+              <a
+                href="./gallery.html#vehicles"
+                class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
+              >
+                Browse by style
+              </a>
+              <a
+                href="./gallery.html#cars"
+                class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
+              >
+                Featured vehicles
+              </a>
+              <a
+                href="./contact.html#contact"
+                class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
+              >
+                Ask about availability
+              </a>
+            </nav>
+
+          </div>
+
+          <div
+            class="mt-10 flex flex-col items-center justify-between gap-4 border-t border-gray-800 pt-8 md:flex-row"
+          >
+            <p class="text-center text-sm text-gray-400 md:text-left">
+              © 2026 Kedarautomall. All rights reserved.
+            </p>
+            <p class="text-center text-sm text-gray-400 md:text-right">
+              Find a car that feels right.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

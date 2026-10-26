@@ -25,7 +25,7 @@
     <title>Kedarautomall</title>
   </head>
 
-  <body class="font-['Outfit',sans-serif] font-light text-gray-900 transition">
+  <body id="top" class="font-['Outfit',sans-serif] font-light text-gray-900 transition">
     <header class="top-0 left-0 w-full z-50 bg-[#f8f8f8] shadow-md">
       <nav
         class="max-w-7xl mx-auto h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between"
@@ -39,74 +39,23 @@
         </a>
 
         <div class="hidden md:flex items-center gap-5 lg:gap-7 text-black">
-          <a
-            href="./index.html"
-            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
-          >
-            Home
-          </a>
-
-          <a
-            href="./index.html"
-            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
-          >
-            Buy Vehicle
-          </a>
-
-          <a
-            href="./index.html"
-            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
-          >
-            Sell Vehicle
-          </a>
-
-          <a
-            href="./index.html"
-            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
-          >
-            Services
-          </a>
-
-          <a
-            href="./index.html"
-            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
-          >
-            Contact
-          </a>
-
-          <a
-            href="./index.html"
-            class="text-sm lg:text-base font-medium hover:text-yellow-500 transition"
-          >
-            About
-          </a>
+          <a href="./index.html" class="text-sm lg:text-base font-medium hover:text-yellow-500 transition">Home</a>
+          <a href="./service.html#services" class="text-sm lg:text-base font-medium hover:text-yellow-500 transition">Services</a>
+          <a href="./gallery.html#vehicles" class="text-sm lg:text-base font-medium hover:text-yellow-500 transition">Gallery</a>
+          <a href="./contact.html#contact" class="text-sm lg:text-base font-medium hover:text-yellow-500 transition">Contact</a>
         </div>
 
-        <div class="flex items-center gap-4">
-          <a
-            href="./index.html"
-            aria-label="Search"
-            class="text-lg hover:text-yellow-600 transition"
-          >
-            <i class="fas fa-search"></i>
-          </a>
-
-          <a
-            href="./index.html"
-            aria-label="Account"
-            class="text-lg hover:text-yellow-600 transition"
-          >
-            <i class="fas fa-user"></i>
-          </a>
-
-          <a
-            href="./index.html"
-            aria-label="Menu"
-            class="md:hidden text-xl hover:text-yellow-600 transition"
-          >
+        <details class="relative md:hidden">
+          <summary aria-label="Open navigation" class="list-none text-xl hover:text-yellow-600 transition cursor-pointer">
             <i class="fas fa-bars"></i>
-          </a>
-        </div>
+          </summary>
+          <div class="absolute right-0 top-full mt-3 min-w-44 rounded-xl bg-white p-2 shadow-xl border border-gray-100">
+            <a href="./index.html" class="block px-4 py-3 text-sm font-medium text-black hover:bg-yellow-50 rounded-lg">Home</a>
+            <a href="./service.html" class="block px-4 py-3 text-sm font-medium text-black hover:bg-yellow-50 rounded-lg">Services</a>
+            <a href="./gallery.html" class="block px-4 py-3 text-sm font-medium text-black hover:bg-yellow-50 rounded-lg">Gallery</a>
+            <a href="./contact.html" class="block px-4 py-3 text-sm font-medium text-black hover:bg-yellow-50 rounded-lg">Contact</a>
+          </div>
+        </details>
       </nav>
     </header>
 
@@ -162,7 +111,7 @@
 
             <div class="flex flex-wrap gap-3 mt-7">
               <a
-                href="#cars"
+                href="./gallery.html#cars"
                 class="inline-flex items-center justify-center gap-2 bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-yellow-500/20 hover:-translate-y-1"
               >
                 Explore Cars
@@ -170,7 +119,7 @@
               </a>
 
               <a
-                href="#sell"
+                href="./service.html#sell"
                 class="inline-flex items-center justify-center gap-2 border border-white/30 hover:border-yellow-500 bg-white/10 hover:bg-yellow-500 text-white hover:text-black font-semibold px-6 py-3.5 rounded-full backdrop-blur-sm transition-all duration-300"
               >
                 Sell Your Car
@@ -266,7 +215,7 @@
       </section>
 
       <!-- Explore section -->
-      <section>
+      <section id="vehicles">
         <div
           class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 flex flex-col sm:flex-row sm:items-end justify-between gap-4"
           data-aos="fade-left"
@@ -283,7 +232,7 @@
           </div>
 
           <a
-            href="./index.html"
+            href="./gallery.html#cars"
             class="inline-flex items-center gap-2 text-[#996b11] hover:text-[#c08c20] font-bold text-sm sm:text-base transition-colors mb-1 sm:mb-2"
           >
             See all vehicles <i class="fa-solid fa-arrow-right"></i>
@@ -378,6 +327,7 @@
 
       <!-- featured vehicles section -->
       <section
+        id="cars"
         class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16"
         data-aos="fade-left"
       >
@@ -426,7 +376,7 @@
               <p class="text-xl font-extrabold text-[#c08c20]">₹ 8.5 Lakh</p>
 
               <a
-                href="./index.html"
+                href="./contact.html"
                 class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
               >
                 View Details
@@ -462,7 +412,7 @@
               <p class="text-xl font-extrabold text-[#c08c20]">₹ 7.2 Lakh</p>
 
               <a
-                href="./index.html"
+                href="./contact.html"
                 class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
               >
                 View Details
@@ -498,7 +448,7 @@
               <p class="text-xl font-extrabold text-[#c08c20]">₹ 18.9 Lakh</p>
 
               <a
-                href="./index.html"
+                href="./contact.html"
                 class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
               >
                 View Details
@@ -534,7 +484,7 @@
               <p class="text-xl font-extrabold text-[#c08c20]">₹ 13.5 Lakh</p>
 
               <a
-                href="./index.html"
+                href="./contact.html"
                 class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
               >
                 View Details
@@ -569,7 +519,7 @@
               <p class="text-xl font-extrabold text-[#c08c20]">₹ 13.9 Lakh</p>
 
               <a
-                href="./index.html"
+                href="./contact.html"
                 class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
               >
                 View Details
@@ -604,7 +554,7 @@
               <p class="text-xl font-extrabold text-[#c08c20]">₹ 18.75 Lakh</p>
 
               <a
-                href="./index.html"
+                href="./contact.html"
                 class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
               >
                 View Details
@@ -639,7 +589,7 @@
               <p class="text-xl font-extrabold text-[#c08c20]">₹ 19.5 Lakh</p>
 
               <a
-                href="./index.html"
+                href="./contact.html"
                 class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
               >
                 View Details
@@ -674,7 +624,7 @@
               <p class="text-xl font-extrabold text-[#c08c20]">₹ 11.4 Lakh</p>
 
               <a
-                href="./index.html"
+                href="./contact.html"
                 class="bg-[#fcf2d9] text-[#996b11] hover:bg-[#f0b000] hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
               >
                 View Details
@@ -684,7 +634,7 @@
         </div>
         <div class="mt-10 sm:mt-14 text-center">
           <a
-            href="./index.html"
+            href="./gallery.html#cars"
             class="inline-flex items-center gap-3 bg-black hover:bg-yellow-500 text-white hover:text-black font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-yellow-500/20 transition-all duration-300 transform hover:-translate-y-1"
           >
             <span>View All Listings</span>
@@ -695,7 +645,7 @@
       <hr class="border-gray-200" />
 
       <!-- sell section -->
-      <section class="w-full p-4 max-w-6xl mx-auto">
+      <section id="sell" class="w-full p-4 max-w-6xl mx-auto">
         <div
           class="mainbox relative overflow-hidden w-full bg-[#181a18] text-white rounded-[2.5rem] p-6 sm:p-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 shadow-2xl"
         >
@@ -734,6 +684,7 @@
 
       <!-- services section -->
       <section
+        id="services"
         class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 flex flex-col sm:flex-row sm:items-center justify-between"
         data-aos="fade-up"
         data-aos-duration="1000"
@@ -830,6 +781,7 @@
 
       <!-- about us -->
       <section
+        id="about"
         class="w-full max-w-7xl mx-auto px-4 py-12 sm:py-16"
         data-aos="fade-up"
         data-aos-duration="1000"
@@ -857,7 +809,7 @@
             </p>
             <div class="flex items-center gap-4 mt-8">
               <a
-                href="#"
+                href="./service.html#services"
                 class="inline-flex items-center gap-2 bg-black text-white px-6 py-3.5 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors"
               >
                 Know More <i class="fa-solid fa-arrow-right"></i>
@@ -878,6 +830,7 @@
 
       <!-- contact section  -->
       <section
+        id="contact"
         class="w-full max-w-7xl mx-auto px-4 py-12 sm:py-16"
         data-aos="fade-up"
         data-aos-duration="1000"
@@ -1007,19 +960,19 @@
               <h2 class="mb-2 text-lg font-bold text-white">Explore</h2>
 
               <a
-                href="#vehicles"
+                href="./gallery.html#vehicles"
                 class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
               >
                 Browse vehicles
               </a>
               <a
-                href="#sell"
+                href="./service.html#sell"
                 class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
               >
                 Sell your vehicle
               </a>
               <a
-                href="#services"
+                href="./service.html#services"
                 class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
               >
                 Our services
@@ -1030,19 +983,19 @@
               <h2 class="mb-2 text-lg font-bold text-white">Kedarautomall</h2>
 
               <a
-                href="#about"
+                href="./index.html#about"
                 class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
               >
                 About us
               </a>
               <a
-                href="#contact"
+                href="./contact.html#contact"
                 class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
               >
                 Contact
               </a>
               <a
-                href="#"
+                href="#top"
                 class="text-sm text-gray-400 transition-colors hover:text-white focus-visible:text-white focus-visible:underline sm:text-base"
               >
                 Back to top
