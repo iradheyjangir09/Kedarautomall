@@ -25,16 +25,16 @@
     <title>Services | Kedarautomall</title>
   </head>
 
-  <body id="top" class="font-['Outfit',sans-serif] font-light text-gray-900 transition">
-    <header class="top-0 left-0 w-full z-50 bg-[#f8f8f8] shadow-md">
+  <body id="top" class="w-screen max-w-full overflow-x-hidden font-['Outfit',sans-serif] font-light text-gray-900 transition">
+    <header class="relative top-0 left-0 w-full z-50 bg-[#f8f8f8] shadow-md">
       <nav
-        class="max-w-7xl mx-auto h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between"
+        class="max-w-7xl mx-auto h-14 md:h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between"
       >
         <a href="./index.html" class="shrink-0">
           <img
             src="./images/logo.png"
             alt="Kedarautomall Logo"
-            class="w-[85px] sm:w-[100px]"
+            class="w-[68px] md:w-[100px]"
           />
         </a>
 
@@ -65,17 +65,6 @@
           </a>
         </div>
 
-        <details class="relative md:hidden">
-          <summary aria-label="Open menu" class="list-none text-xl hover:text-yellow-600 transition cursor-pointer">
-            <i class="fas fa-bars"></i>
-          </summary>
-          <div class="absolute right-0 top-full mt-3 min-w-44 rounded-xl bg-white p-2 shadow-xl border border-gray-100">
-            <a href="./index.html" class="block px-4 py-3 text-sm font-medium text-black hover:bg-yellow-50 rounded-lg">Home</a>
-            <a href="./service.html" class="block px-4 py-3 text-sm font-medium text-black hover:bg-yellow-50 rounded-lg" aria-current="page">Services</a>
-            <a href="./gallery.html" class="block px-4 py-3 text-sm font-medium text-black hover:bg-yellow-50 rounded-lg">Gallery</a>
-            <a href="./contact.html" class="block px-4 py-3 text-sm font-medium text-black hover:bg-yellow-50 rounded-lg">Contact</a>
-          </div>
-        </details>
       </nav>
     </header>
 
@@ -219,7 +208,7 @@
 
       <!-- footer section -->
 
-      <footer class="w-full bg-[#181a19] pt-16 pb-8 font-sans">
+      <footer class="w-full bg-[#181a19] pt-16 pb-16 md:pb-8 font-sans">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-aos="zoom-out">
           <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
             <div class="md:col-span-2">
@@ -317,6 +306,26 @@
         </div>
       </footer>
     </main>
+    <nav class="fixed bottom-3 left-1/2 z-50 w-64 -translate-x-1/2 rounded-full border border-white/10 bg-[#181a1a]/85 px-2 py-1 shadow-2xl backdrop-blur-xl md:hidden" aria-label="Mobile navigation">
+      <div class="grid grid-cols-4 items-center justify-items-center">
+        <a href="./index.html" aria-label="Home" class="grid h-9 w-9 place-items-center rounded-full transition-colors text-gray-300 hover:bg-white/10 hover:text-white">
+          <i class="fa-solid fa-house text-sm" aria-hidden="true"></i>
+          <span class="sr-only">Home</span>
+        </a>
+        <a href="./service.html" aria-label="Services" class="grid h-9 w-9 place-items-center rounded-full transition-colors bg-[#e3b13e] text-[#181a18]" aria-current="page">
+          <i class="fa-solid fa-screwdriver-wrench text-sm" aria-hidden="true"></i>
+          <span class="sr-only">Services</span>
+        </a>
+        <a href="./gallery.html" aria-label="Gallery" class="grid h-9 w-9 place-items-center rounded-full transition-colors text-gray-300 hover:bg-white/10 hover:text-white">
+          <i class="fa-solid fa-images text-sm" aria-hidden="true"></i>
+          <span class="sr-only">Gallery</span>
+        </a>
+        <a href="./contact.html" aria-label="Contact" class="grid h-9 w-9 place-items-center rounded-full transition-colors text-gray-300 hover:bg-white/10 hover:text-white">
+          <i class="fa-solid fa-phone text-sm" aria-hidden="true"></i>
+          <span class="sr-only">Contact</span>
+        </a>
+      </div>
+    </nav>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
