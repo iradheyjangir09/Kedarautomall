@@ -1,39 +1,48 @@
-# Kedar Automall
+# 🚗 Kedarautomall
 
-A static, four-page website for Kedar Automall. The original page structure and hero image are retained. The vehicle catalog now presents 20 Mahindra model cards, including the original eight listings and twelve additional model cards that use the project’s local vehicle images.
+**A more personal way to buy or sell your next vehicle.**
 
-## Pages
+Kedarautomall is a modern, responsive web application designed for browsing, buying, and selling pre-owned vehicles. Built with clean UI/UX principles, smooth scroll animations, and mobile-first navigation, it offers users an intuitive experience to explore cars and connect directly with the dealership.
 
-- `index.html` — Home, featured vehicles, services, about, contact, and map
-- `gallery.html` — Vehicle categories and the full vehicle catalog
-- `service.html` — Sell-your-car call to action and service information
-- `contact.html` — Contact information, accessible form, and map
+---
 
-## Styling and behavior
+## ✨ Key Features
 
-- Tailwind CSS utility classes are used in the HTML. `tailwind.input.css` contains only Tailwind directives; `tailwind.css` is the generated static stylesheet.
-- No JavaScript or hand-written CSS rules are used in the website.
-- The dark-mode switch is a native checkbox styled with Tailwind peer utilities. Its dark colors use neutral black and gray.
-- Catalog categories use URL fragments and Tailwind `:target`/`:has()` variants. They do not need a script.
-- Responsive layouts use Flexbox and Grid. The checked preview had no horizontal overflow at 375px, 768px, or 1280px.
-- The business address is shown as Lal Kothi, Jaipur, Rajasthan; the site displays “Open 24/7.”
-- Existing vehicle listing years, specifications, descriptions, and prices are retained. Added model-family cards say “Price on request” and do not claim current stock.
+- **Fully Responsive Design:** Optimized for desktop, tablet, and mobile viewports with a dedicated floating bottom navigation bar on mobile devices.
+- **Interactive Vehicle Showcase:** Browse available cars with clean card layouts and detailed sections.
+- **Dedicated Multi-Page Architecture:**
+  - `index.html` — Hero showcase, featured vehicles, and company overview.
+  - `service.html` — Information on vehicle buying, selling, and dealership services.
+  - `gallery.html` — Visual showcase of available inventory.
+  - `contact.html` — Direct inquiry form, contact details, and embedded Google Maps location.
+- **Smooth Animations:** Integrated with **AOS (Animate On Scroll)** for clean, engaging page transitions.
+- **Modern Typography & Icons:** Styled using Google Fonts (`Outfit`) and `Font Awesome` icons.
 
-## Build the Tailwind stylesheet
+---
 
-Install the Tailwind CLI once, then regenerate the static stylesheet after editing HTML classes:
+## 🛠️ Tech Stack
 
-```sh
-npm install --save-dev tailwindcss @tailwindcss/cli
-npx @tailwindcss/cli -i ./tailwind.input.css -o ./tailwind.css --minify
-```
+- **HTML5** — Semantic structure and accessibility attributes (`aria-label`, `aria-current`).
+- **Tailwind CSS (v4)** — Utility-first styling for rapid, responsive UI development.
+- **AOS (Animate On Scroll)** — Lightweight scroll animation library.
+- **Font Awesome** — Scalable vector icons.
+- **Google Maps Embed API** — Interactive location map in the footer.
 
-The browser loads `tailwind.css` directly; it does not run a Tailwind or JavaScript browser runtime.
+---
 
-## Contact form
+## 📁 Project Structure
 
-The form uses native HTML validation and opens the visitor’s default email app through `mailto:`. This project does not include a server-side submission service or database. Add one before treating the form as a guaranteed business lead channel.
-
-## Milestone 1 submission items
-
-The local project includes the four pages, semantic page regions, labelled controls, image alt text, responsive Flexbox/Grid layouts, dark mode, and hover/focus states. No live deployment, Git commits, branches, pull request, screenshots, or teacher submission were created in this update. Those project-history and delivery steps still need to be completed in the student’s own repository/account. Add screenshots and the verified live URL after publishing; do not use an unverified URL.
+```text
+kedarautomall/
+├── images/
+│   ├── vehicles/       # Vehicle inventory images
+│   ├── aboutus.png
+│   ├── logo.png
+│   ├── scorpio.jpeg
+│   ├── suv.png
+│   └── thar.jpg
+├── index.html          # Home page
+├── service.html        # Services & Sell Vehicle page
+├── gallery.html        # Vehicle Gallery page
+├── contact.html        # Contact form & location page
+└── README.md           # Project documentation
